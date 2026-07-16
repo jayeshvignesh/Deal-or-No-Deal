@@ -1,4 +1,3 @@
-import replit
 import random
 import time
 import os
