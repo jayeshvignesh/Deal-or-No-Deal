@@ -1,7 +1,8 @@
 import replit
 import random
 import time
-#TODO from main1 import
+import os
+
 # https://www.101soundboards.com/boards/35203-deal-or-no-deal/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
 caseNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
     22, 23, 24, 25, 26]
@@ -36,10 +37,11 @@ def heading():
                                                                                                                               
                                                                                                                               
                                                                                                                               """)
-
+def clear_screen():
+    os.system('cls')
 
 def reset():
-  replit.clear()
+  clear_screen()
   heading()
   print("Round", roundNum)
   print(f"Your case: {playercase['case_num']}")
